@@ -1,0 +1,20 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 10:04:20
+// ----------------------------------------------------
+// Method: detectIphoneOrIpod
+// Description
+//*Detects if the current device is an iPhone or iPod Touch.
+//*@return detection of an iPhone or iPod Touch
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+//We repeat the searches here because some iPods may report themselves as an iPhone, which would be okay.
+$0:=(Position(<>deviceIphone;userAgent)#-1)\
+ | (Position(<>deviceIpod;userAgent)#-1)
+
+
+

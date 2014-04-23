@@ -1,0 +1,202 @@
+﻿//%attributes = {"lang":"en","invisible":true} comment added and reserved by 4D.
+
+// Initialize some initial smartphone string variables.
+C_TEXT(<>engineWebKit)
+<>engineWebKit:="webkit"
+
+C_TEXT(<>deviceIphone)
+<>deviceIphone:="iphone"
+C_TEXT(<>deviceIpod)
+<>deviceIpod:="ipod"
+C_TEXT(<>deviceIpad)
+<>deviceIpad:="ipad"
+C_TEXT(<>deviceMacPpc)
+<>deviceMacPpc:="macintosh"//Used for disambiguation
+
+C_TEXT(<>deviceAndroid)
+<>deviceAndroid:="android"
+C_TEXT(<>deviceGoogleTV)
+<>deviceGoogleTV:="googletv"
+C_TEXT(<>deviceHtcFlyer)
+<>deviceHtcFlyer:="htc_flyer"//HTC Flyer
+
+C_TEXT(<>deviceWinPhone7)
+<>deviceWinPhone7:="windows phone os 7"
+C_TEXT(<>deviceWinPhone8)
+<>deviceWinPhone8:="windows phone 8"
+C_TEXT(<>deviceWinMob)
+<>deviceWinMob:="windows ce"
+C_TEXT(<>deviceWindows)
+<>deviceWindows:="windows"
+C_TEXT(<>deviceIeMob)
+<>deviceIeMob:="iemobile"
+C_TEXT(<>devicePpc)
+<>devicePpc:="ppc"//Stands for PocketPC
+C_TEXT(<>enginePie)
+<>enginePie:="wm5 pie"//An old Windows Mobile
+
+C_TEXT(<>deviceBB)
+<>deviceBB:="blackberry"
+C_TEXT(<>deviceBB10)
+<>deviceBB10:="bb10"//For the new BB 10 OS
+C_TEXT(<>vndRIM)
+<>vndRIM:="vnd.rim"//Detectable when BB devices emulate IE or Firefox
+C_TEXT(<>deviceBBStorm)
+<>deviceBBStorm:="blackberry95"//Storm 1 and 2
+C_TEXT(<>deviceBBBold)
+<>deviceBBBold:="blackberry97"//Bold 97x0 (non-touch)
+C_TEXT(<>deviceBBBoldTouch)
+<>deviceBBBoldTouch:="blackberry 99"//Bold 99x0 (touchscreen)
+C_TEXT(<>deviceBBTour)
+<>deviceBBTour:="blackberry96"//Tour
+C_TEXT(<>deviceBBCurve)
+<>deviceBBCurve:="blackberry89"//Curve 2
+C_TEXT(<>deviceBBCurveTouch)
+<>deviceBBCurveTouch:="blackberry 938"//Curve Touch 9380
+C_TEXT(<>deviceBBTorch)
+<>deviceBBTorch:="blackberry 98"//Torch
+C_TEXT(<>deviceBBPlaybook)
+<>deviceBBPlaybook:="playbook"//PlayBook tablet
+
+C_TEXT(<>deviceSymbian)
+<>deviceSymbian:="symbian"
+C_TEXT(<>deviceS60)
+<>deviceS60:="series60"
+C_TEXT(<>deviceS70)
+<>deviceS70:="series70"
+C_TEXT(<>deviceS80)
+<>deviceS80:="series80"
+C_TEXT(<>deviceS90)
+<>deviceS90:="series90"
+
+C_TEXT(<>devicePalm)
+<>devicePalm:="palm"
+C_TEXT(<>deviceWebOS)
+<>deviceWebOS:="webos"//For Palm's line of WebOS devices
+C_TEXT(<>deviceWebOShp)
+<>deviceWebOShp:="hpwos"//For HP's line of WebOS devices
+C_TEXT(<>engineBlazer)
+<>engineBlazer:="blazer"//Old Palm
+C_TEXT(<>engineXiino)
+<>engineXiino:="xiino"//Another old Palm
+
+C_TEXT(<>deviceNuvifone)
+<>deviceNuvifone:="nuvifone"//Garmin Nuvifone
+C_TEXT(<>deviceBada)
+<>deviceBada:="bada"//Samsung's Bada OS
+C_TEXT(<>deviceTizen)
+<>deviceTizen:="tizen"//Tizen OS
+C_TEXT(<>deviceMeego)
+<>deviceMeego:="meego"//Meego OS
+
+C_TEXT(<>deviceKindle)
+<>deviceKindle:="kindle"//Amazon Kindle, eInk one
+C_TEXT(<>engineSilk)
+<>engineSilk:="silk-accelerated"//Amazon's accelerated Silk browser for Kindle Fire
+
+//Initialize variables for mobile-specific content.
+C_TEXT(<>vndwap)
+<>vndwap:="vnd.wap"
+C_TEXT(<>wml)
+<>wml:="wml"
+
+//Initialize variables for other random devices and mobile browsers.
+C_TEXT(<>deviceTablet)
+<>deviceTablet:="tablet"//Generic term for slate and tablet devices
+C_TEXT(<>deviceBrew)
+<>deviceBrew:="brew"
+C_TEXT(<>deviceDanger)
+<>deviceDanger:="danger"
+C_TEXT(<>deviceHiptop)
+<>deviceHiptop:="hiptop"
+C_TEXT(<>devicePlaystation)
+<>devicePlaystation:="playstation"
+C_TEXT(<>devicePlaystationVita)
+<>devicePlaystationVita:="vita"
+C_TEXT(<>deviceNintendoDs)
+<>deviceNintendoDs:="nitro"
+C_TEXT(<>deviceNintendo)
+<>deviceNintendo:="nintendo"
+C_TEXT(<>deviceWii)
+<>deviceWii:="wii"
+C_TEXT(<>deviceXbox)
+<>deviceXbox:="xbox"
+C_TEXT(<>deviceArchos)
+<>deviceArchos:="archos"
+
+C_TEXT(<>engineOpera)
+<>engineOpera:="opera"//Popular browser
+C_TEXT(<>engineNetfront)
+<>engineNetfront:="netfront"//Common embedded OS browser
+C_TEXT(<>engineUpBrowser)
+<>engineUpBrowser:="up.browser"//common on some phones
+C_TEXT(<>engineOpenWeb)
+<>engineOpenWeb:="openweb"//Transcoding by OpenWave server
+C_TEXT(<>deviceMidp)
+<>deviceMidp:="midp"//a mobile Java technology
+C_TEXT(<>uplink)
+<>uplink:="up.link"
+C_TEXT(<>engineTelecaQ)
+<>engineTelecaQ:="teleca q"//a modern feature phone browser
+C_TEXT(<>engineObigo)
+<>engineObigo:="obigo"//W 10 is a modern feature phone browser
+
+C_TEXT(<>devicePda)
+<>devicePda:="pda"//some devices report themselves as PDAs
+C_TEXT(<>mini)
+<>mini:="mini"//Some mobile browsers put "mini" in their names.
+C_TEXT(<>mobile)
+<>mobile:="mobile"//Some mobile browsers put "mobile" in their user agent strings.
+C_TEXT(<>mobi)
+<>mobi:="mobi"//Some mobile browsers put "mobi" in their user agent strings.
+
+//Use Maemo, Tablet, and Linux to test for Nokia"s Internet Tablets.
+C_TEXT(<>maemo)
+<>maemo:="maemo"
+C_TEXT(<>linux)
+<>linux:="linux"
+C_TEXT(<>qtembedded)
+<>qtembedded:="qt embedded"//for Sony Mylo
+C_TEXT(<>mylocom2)
+<>mylocom2:="com2"//for Sony Mylo also
+
+//In some UserAgents, the only clue is the manufacturer.
+C_TEXT(<>manuSonyEricsson)
+<>manuSonyEricsson:="sonyericsson"
+C_TEXT(<>manuericsson)
+<>manuericsson:="ericsson"
+C_TEXT(<>manuSamsung1)
+<>manuSamsung1:="sec-sgh"
+C_TEXT(<>manuSony)
+<>manuSony:="sony"
+C_TEXT(<>manuHtc)
+<>manuHtc:="htc"
+
+//In some UserAgents, the only clue is the operator.
+C_TEXT(<>svcDocomo)
+<>svcDocomo:="docomo"
+C_TEXT(<>svcKddi)
+<>svcKddi:="kddi"
+C_TEXT(<>svcVodafone)
+<>svcVodafone:="vodafone"
+
+//Disambiguation strings.
+C_TEXT(<>disUpdate)
+<>disUpdate:="update"//pda vs. update
+
+// User-Agent and Accept HTTP request headers
+C_TEXT(userAgent)
+C_TEXT(httpAccept)
+
+// Let's store values for quickly accessing the same info multiple times.
+C_BOOLEAN(initCompleted)
+C_BOOLEAN(isWebkit)//Stores the result of DetectWebkit()
+C_BOOLEAN(isMobilePhone)//Stores the result of DetectMobileQuick()
+C_BOOLEAN(isIphone)//Stores the result of DetectIphone()
+C_BOOLEAN(isAndroid)//Stores the result of DetectAndroid()
+C_BOOLEAN(isAndroidPhone)//Stores the result of DetectAndroidPhone()
+C_BOOLEAN(isTierTablet)//Stores the result of DetectTierTablet()
+C_BOOLEAN(isTierIphone)//Stores the result of DetectTierIphone()
+C_BOOLEAN(isTierRichCss)//Stores the result of DetectTierRichCss()
+C_BOOLEAN(isTierGenericMobile)//Stores the result of DetectTierOtherPhones()
+

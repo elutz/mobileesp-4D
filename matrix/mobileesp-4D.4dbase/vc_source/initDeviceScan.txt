@@ -1,0 +1,28 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 22.04.14, 17:19:01
+// ----------------------------------------------------
+// Method: initDeviceScan
+// Description
+//  Initialize Key Stored Values.
+//
+// Parameters
+// ----------------------------------------------------
+
+//Save these properties to speed processing
+isWebkit:=detectWebkit 
+isIphone:=detectIphone 
+isAndroid:=detectAndroid 
+isAndroidPhone:=detectAndroidPhone 
+
+//Generally, these tiers are the most useful for web development
+isMobilePhone:=detectMobileQuick 
+isTierTablet:=detectTierTablet 
+isTierIphone:=detectTierIphone 
+
+//Optional: Comment these out if you NEVER use them
+//isTierRichCss:=detectTierRichCss
+//isTierGenericMobile:=detectTierOtherPhones
+
+initCompleted:=True

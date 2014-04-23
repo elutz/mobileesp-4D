@@ -1,0 +1,15 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 10:10:19
+// ----------------------------------------------------
+// Method: detectWindowsPhone8
+// Description
+//*Detects a Windows Phone 7.x device(in mobile browsing mode).
+//*@return detection of Windows Phone 7
+//  // Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+$0:=Position(<>deviceWinPhone7;userAgent)#-1

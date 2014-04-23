@@ -1,0 +1,77 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 09:37:33
+// ----------------------------------------------------
+// Method: detectMobileQuick
+// Description
+//*Detects if the current device is a mobile device.
+//*This method catches most of the popular modern devices.
+//*Excludes Apple iPads and other modern tablets.
+//*@$0:=detection of any mobile device using the quicker method  
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+//Let's exclude tablets
+If (detectTierTablet ())
+$0:=False
+
+Else 
+
+If ((initCompleted=True) | (isMobilePhone=True))
+$0:=isMobilePhone
+
+Else 
+//Most mobile browsing is done on smartphones
+If (detectSmartphone )
+$0:=True
+
+Else 
+
+// TODO
+//If (detectWapWml() | detectBrewDevice() | detectOperaMobile ())
+If (detectOperaMobile )
+$0:=True
+
+Else 
+
+If ((Position(<>engineObigo;userAgent)#-1)\
+ | (Position(<>engineNetfront;userAgent)#-1)\
+ | (Position(<>engineUpBrowser;userAgent)#-1)\
+ | (Position(<>engineOpenWeb;userAgent)#-1))
+$0:=True
+
+Else 
+
+// TODO diese exotischen Dinge vielleicht für später
+//If (detectDangerHiptop()
+// |  | detectMidpCapable()
+// |  | detectMaemoTablet()
+// |  | detectArchos())
+If (detectMidpCapable )
+$0:=True
+
+Else 
+
+If ((Position(<>devicePda;userAgent)#-1) & (Position(<>disUpdate;userAgent)<0))//no index found
+$0:=True
+
+Else 
+$0:=Position(<>mobile;userAgent)#-1
+
+// TODO Maybe later
+//$0:=True
+//Else 
+//We also look for Kindle devices
+//$0:=detectKindle() | detectAmazonSilk()
+//End if 
+
+End if 
+End if 
+End if 
+End if 
+End if 
+End if 
+End if 

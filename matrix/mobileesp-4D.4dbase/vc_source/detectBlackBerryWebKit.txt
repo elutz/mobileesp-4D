@@ -1,0 +1,17 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 10:14:01
+// ----------------------------------------------------
+// Method: detectBlackBerryWebKit
+// Description
+//*Detects if the current browser is a BlackBerry device AND uses a
+//*WebKit-based browser. These are signatures for the new BlackBerry OS 6.
+//*Examples: Torch. Includes the Playbook.
+//*@return detection of a Blackberry device with WebKit browser
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+$0:=detectBlackBerry  & detectWebkit 

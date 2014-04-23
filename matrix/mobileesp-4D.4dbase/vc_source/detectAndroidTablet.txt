@@ -1,0 +1,36 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 09:46:14
+// ----------------------------------------------------
+// Method: detectAndroidTablet
+// Description
+//*Detects if the current device is a(Self-reported)Android tablet.
+//*Google says these devices will have 'Android' and NOT 'mobile' in their user agent.
+//*@$0:= detection of an Android tablet
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+//First, let's make sure we're on an Android device.
+If (Not(detectAndroid ))
+$0:=False
+
+Else 
+//Special check for Opera Android Phones. They should NOT report here.
+If (detectOperaMobile )
+$0:=False
+
+Else 
+//Special check for the HTC Flyer 7" tablet. It should NOT report here.
+If (Position(<>deviceHtcFlyer;userAgent)#-1)
+$0:=False
+
+Else 
+//Otherwise, if it's Android and does NOT have 'mobile' in it, Google says it's a tablet.
+$0:=Position(<>mobile;userAgent)>-1
+
+End if 
+End if 
+End if 

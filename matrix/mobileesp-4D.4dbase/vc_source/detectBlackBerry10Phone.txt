@@ -1,0 +1,18 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 10:12:09
+// ----------------------------------------------------
+// Method: detectBlackBerry10Phone
+// Description
+//*Detects if the current browser is a BlackBerry 10 OS phone.
+//*Excludes tablets.
+//*@return detection of a Blackberry 10 device
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+$0:=(Position(<>deviceBB10;userAgent)#-1)\
+ & (Position(<>mobile;userAgent)#-1)
+

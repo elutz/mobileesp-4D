@@ -1,0 +1,21 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 10:23:47
+// ----------------------------------------------------
+// Method: detectBlackBerryTouch
+// Description
+//*Detects if the current browser is a BlackBerry Touch
+//*device, such as the Storm, Torch, and Bold Touch. Excludes the Playbook.
+//*@return detection of a Blackberry touchscreen device
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+$0:=detectBlackBerry \
+ & ((Position(<>deviceBBStorm;userAgent)#-1) | \
+(Position(<>deviceBBTorch;userAgent)#-1) | \
+(Position(<>deviceBBBoldTouch;userAgent)#-1) | \
+(Position(<>deviceBBCurveTouch;userAgent)#-1))
+

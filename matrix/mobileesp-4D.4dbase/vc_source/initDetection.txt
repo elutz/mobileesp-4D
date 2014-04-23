@@ -1,0 +1,21 @@
+﻿//%attributes = {"lang":"en","shared":true} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 22.04.14, 17:34:20
+// ----------------------------------------------------
+// Method: initDetection
+// Description
+// *Initialize the userAgent and httpAccept variables
+// *
+// *@param userAgent the User-Agent header
+// *@param httpAccept the Accept header
+// ----------------------------------------------------
+C_TEXT($1)
+C_TEXT($2)
+
+userAgent:=$1
+httpAccept:=$2
+
+//Intialize key stored values.
+initDeviceScan 

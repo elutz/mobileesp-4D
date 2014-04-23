@@ -1,0 +1,16 @@
+﻿//%attributes = {"lang":"en","shared":true} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 11:34:52
+// ----------------------------------------------------
+// Method: getIsTierTablet
+// Description
+//*Return whether the device is in the Tablet Tier.
+//*@return isTierTablet
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+$0:=isTierTablet
+

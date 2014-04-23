@@ -1,0 +1,20 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 22.04.14, 17:21:34
+// ----------------------------------------------------
+// Method: detectWebkit
+// Description
+// * Detects if the current browser is based on WebKit.
+// *@return detection of a WebKit browser
+//
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+
+If ((initCompleted=True) | (isWebkit=True))
+$0:=isWebkit
+Else 
+$0:=Position(<>engineWebKit;userAgent)#-1
+End if 

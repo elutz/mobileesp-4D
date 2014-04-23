@@ -1,0 +1,15 @@
+﻿//%attributes = {"lang":"en","shared":true} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 11:35:57
+// ----------------------------------------------------
+// Method: getIsTierIphone
+// Description
+//*Return whether the device is in the Iphone Tier.
+//*@return isTierIphone
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+$0:=isTierIphone

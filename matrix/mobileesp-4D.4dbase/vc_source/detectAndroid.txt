@@ -1,0 +1,30 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 09:21:14
+// ----------------------------------------------------
+// Method: detectAndroid
+// Description
+//*Detects*any*Android OS-based device: phone, tablet, and multi-media player.
+//*Also detects Google TV.
+//*@$0:=detection of an Android device
+//
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+If ((initCompleted=True) | (isAndroid=True))
+$0:=isAndroid
+
+Else 
+
+If ((Position(<>deviceAndroid;userAgent)#-1) | detectGoogleTV )
+$0:=True
+
+Else 
+//Special check for the HTC Flyer 7" tablet. It should report here.
+$0:=Position(<>deviceHtcFlyer;userAgent)#-1
+
+End if 
+End if 

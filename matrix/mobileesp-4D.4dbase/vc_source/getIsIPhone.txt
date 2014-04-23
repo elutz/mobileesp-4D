@@ -1,0 +1,15 @@
+﻿//%attributes = {"lang":"en","shared":true} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 11:32:57
+// ----------------------------------------------------
+// Method: getIsIPhone
+// Description
+//
+//*Return whether the device is an Iphone or iPod Touch
+//*@return isIphone
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+$0:=isIphone

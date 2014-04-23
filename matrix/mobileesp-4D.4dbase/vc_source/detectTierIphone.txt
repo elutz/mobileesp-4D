@@ -1,0 +1,34 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 09:59:54
+// ----------------------------------------------------
+// Method: detectTierIphone
+// Description
+//*The quick way to detect for a tier of devices.
+//*This method detects for devices which can
+//*display iPhone-optimized web content.
+//*Includes iPhone, iPod Touch, Android, Windows Phone 7 and 8, BB10, WebOS, Playst
+//*@return detection of any device in the iPhone/Android/Windows Phone/BlackBerry/WebOS Tier
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+If ((initCompleted=True) | (isTierIphone=True))
+$0:=isTierIphone
+Else 
+
+$0:=detectIphoneOrIpod \
+ | detectAndroidPhone \
+ | detectWindowsPhone \
+ | detectBlackBerry10Phone \
+ | (detectBlackBerryWebKit  & detectBlackBerryTouch )
+
+// TODO:
+//| detectPalmWebOS
+//| detectBada
+//| detectTizen
+//| detectGamingHandheld
+
+End if 

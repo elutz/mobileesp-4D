@@ -1,0 +1,27 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 09:43:22
+// ----------------------------------------------------
+// Method: detectTierTablet
+// Description
+//*The quick way to detect for a tier of devices.
+//*This method detects for the new generation of
+//*HTML 5 capable, larger screen tablets.
+//*Includes iPad, Android(e.g., Xoom), BB Playbook, WebOS, etc.
+//*@$0:= detection of any device in the Tablet Tier
+// Parameters
+// ----------------------------------------------------
+
+If ((initCompleted=True) | (isTierTablet=True))
+$0:=isTierTablet
+
+Else 
+
+$0:=detectIpad \
+ | detectAndroidTablet \
+ | detectBlackBerryTablet \
+ | detectWebOSTablet 
+
+End if 

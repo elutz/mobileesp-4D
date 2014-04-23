@@ -1,0 +1,17 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 10:48:51
+// ----------------------------------------------------
+// Method: detectMidpCapable
+// Description
+//*Detects if the current device supports MIDP, a mobile Java technology.
+//*@return detection of a MIDP mobile Java-capable device
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+$0:=(Position(<>deviceMidp;userAgent)#-1)\
+ | (Position(<>deviceMidp;httpAccept)#-1)
+

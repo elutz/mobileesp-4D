@@ -1,0 +1,17 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 10:53:15
+// ----------------------------------------------------
+// Method: detectS60OssBrowser
+// Description
+//*Detects if the current browser is the Symbian S60 Open Source Browser.
+//*@return detection of Symbian S60 Browser
+// Parameters
+// ----------------------------------------------------
+
+//First, test for WebKit, then make sure it's either Symbian or S60.
+$0:=detectWebkit \
+ & ((Position(<>deviceSymbian;userAgent)#-1)\
+ | (Position(<>deviceS60;userAgent)#-1))

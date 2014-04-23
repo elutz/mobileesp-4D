@@ -1,0 +1,15 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 09:25:41
+// ----------------------------------------------------
+// Method: detectGoogleTV
+// Description
+//*Detects if the current device is a GoogleTV.
+//*@return detection of GoogleTV
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+$0:=Position(<>deviceGoogleTV;userAgent)#-1

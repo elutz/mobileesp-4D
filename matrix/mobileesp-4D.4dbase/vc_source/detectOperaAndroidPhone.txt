@@ -1,0 +1,17 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 09:33:50
+// ----------------------------------------------------
+// Method: detectOperaAndroidPhone
+// Description
+//*Detects Opera Mobile on an Android phone.
+//*@return detection of an Opera browser on an Android phone
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+$0:=((Position(<>engineOpera;userAgent)#-1)\
+ & (Position(<>deviceAndroid;userAgent)#-1)\
+ & (Position(<>mobi;userAgent)#-1))

@@ -1,0 +1,6 @@
+Component Version: 37283
+4D Version: 13
+
+This file represents the version number of the component.
+
+To build a new version, execute the "BLD_Build" method from the matrix database.

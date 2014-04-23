@@ -1,0 +1,83 @@
+﻿//%attributes = {"lang":"en","invisible":true} comment added and reserved by 4D.
+C_BOOLEAN(detectWebkit ;$0)
+C_TEXT(initDetection ;$1)
+C_TEXT(initDetection ;$2)
+C_BOOLEAN(detectIphone ;$0)
+C_BOOLEAN(detectIpad ;$0)
+C_BOOLEAN(detectIpod ;$0)
+
+//DETECTANDROID
+C_BOOLEAN(detectAndroid ;$0)
+
+//DETECTGOOGLETV
+C_BOOLEAN(detectGoogleTV ;$0)
+
+//DETECTANDROIDPHONE
+C_BOOLEAN(detectAndroidPhone ;$0)
+
+//DETECTOPERAANDROIDPHONE
+C_BOOLEAN(detectOperaAndroidPhone ;$0)
+
+//DETECTMOBILEQUICK
+C_BOOLEAN(detectMobileQuick ;$0)
+
+//DETECTTIERTABLET
+C_BOOLEAN(detectTierTablet ;$0)
+
+//DETECTANDROIDTABLET
+C_BOOLEAN(detectAndroidTablet ;$0)
+
+//DETECTOPERAMOBILE
+C_BOOLEAN(detectOperaMobile ;$0)
+
+//DETECTBLACKBERRYTABLET
+C_BOOLEAN(detectBlackBerryTablet ;$0)
+
+//DETECTWEBOSTABLET
+C_BOOLEAN(detectWebOSTablet ;$0)
+
+//DETECTTIERIPHONE
+C_BOOLEAN(detectTierIphone ;$0)
+
+//DETECTIPHONEORIPOD
+C_BOOLEAN(detectIphoneOrIpod ;$0)
+
+//DETECTWINDOWSPHONE
+C_BOOLEAN(detectWindowsPhone ;$0)
+
+//DETECTWINDOWSPHONE7
+C_BOOLEAN(detectWindowsPhone7 ;$0)
+
+//DETECTWINDOWSPHONE8
+C_BOOLEAN(detectWindowsPhone8 ;$0)
+
+//DETECTBLACKBERRY10PHONE
+C_BOOLEAN(detectBlackBerry10Phone ;$0)
+
+//DETECTBLACKBERRYWEBKIT
+C_BOOLEAN(detectBlackBerryWebKit ;$0)
+
+//DETECTBLACKBERRY
+C_BOOLEAN(detectBlackBerry ;$0)
+
+//DETECTBLACKBERRYTOUCH
+C_BOOLEAN(detectBlackBerryTouch ;$0)
+
+//DETECTMIDPCAPABLE
+C_BOOLEAN(detectMidpCapable ;$0)
+
+//DETECTSMARTPHONE
+C_BOOLEAN(detectSmartphone ;$0)
+
+//DETECTS60OSSBROWSER
+C_BOOLEAN(detectS60OssBrowser ;$0)
+
+//DETECTSYMBIANOS
+C_BOOLEAN(detectSymbianOS ;$0)
+
+//DETECTWINDOWSMOBILE
+C_BOOLEAN(detectWindowsMobile ;$0)
+
+C_BOOLEAN(getIsIPhone ;$0)
+C_BOOLEAN(getIsTierIphone ;$0)
+C_BOOLEAN(getIsTierTablet ;$0)

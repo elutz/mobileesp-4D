@@ -1,0 +1,15 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 10:07:01
+// ----------------------------------------------------
+// Method: detectWindowsPhone
+// Description
+//*Detects if the current browser is EITHER a Windows Phone 7.x OR 8 device
+//*@return detection of Windows Phone 7.x OR 8
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+$0:=detectWindowsPhone7  | detectWindowsPhone8 

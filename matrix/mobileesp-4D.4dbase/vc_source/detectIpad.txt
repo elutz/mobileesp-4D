@@ -1,0 +1,16 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 09:13:07
+// ----------------------------------------------------
+// Method: detectIpad
+// Description
+//Detects if the current device is an iPad tablet.
+//*@return detection of an iPad
+//
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+$0:=((Position(<>deviceIpad;userAgent)#-1) & detectWebkit )

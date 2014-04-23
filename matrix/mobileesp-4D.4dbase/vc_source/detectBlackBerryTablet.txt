@@ -1,0 +1,16 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 09:54:52
+// ----------------------------------------------------
+// Method: detectBlackBerryTablet
+// Description
+//*Detects if the current browser is on a BlackBerry tablet device.
+//*Example: PlayBook
+//*@return detection of a Blackberry Tablet
+// Parameters
+// ----------------------------------------------------
+C_BOOLEAN($0)
+
+$0:=Position(<>deviceBBPlaybook;userAgent)#-1

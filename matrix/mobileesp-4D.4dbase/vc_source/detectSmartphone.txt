@@ -1,0 +1,23 @@
+﻿//%attributes = {"lang":"en"} comment added and reserved by 4D.
+
+// ----------------------------------------------------
+// User name (OS): lutz.epperlein
+// Date and time: 23.04.14, 10:51:30
+// ----------------------------------------------------
+// Method: detectSmartphone
+// Description
+//*Check to see whether the device is any device
+//*in the 'smartphone' category.
+//*@return detection of a general smartphone device
+// Parameters
+// ----------------------------------------------------
+
+//Exclude duplicates from TierIphone
+$0:=detectTierIphone \
+ | detectS60OssBrowser \
+ | detectSymbianOS \
+ | detectWindowsMobile \
+ | detectBlackBerry 
+
+// TODO
+// | detectPalmOS
