@@ -213,5 +213,4 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-matrix/mobileesp-4D.4dbase/Logs/BuildApp.log.html
-matrix/mobileesp-4D.4dbase/Logs/BuildApp.log.xml
+matrix/mobileesp-4D.4dbase/Logs/

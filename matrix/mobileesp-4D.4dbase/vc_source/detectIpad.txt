@@ -13,4 +13,4 @@
 // ----------------------------------------------------
 C_BOOLEAN($0)
 
-$0:=((Position(<>deviceIpad;userAgent)#-1) & detectWebkit )
+$0:=((Position(<>deviceIpad;userAgent)#0) & detectWebkit )

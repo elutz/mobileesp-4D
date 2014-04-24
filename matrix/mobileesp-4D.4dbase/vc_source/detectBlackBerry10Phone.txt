@@ -13,6 +13,6 @@
 // ----------------------------------------------------
 C_BOOLEAN($0)
 
-$0:=(Position(<>deviceBB10;userAgent)#-1)\
- & (Position(<>mobile;userAgent)#-1)
+$0:=(Position(<>deviceBB10;userAgent)#0)\
+ & (Position(<>mobile;userAgent)#0)
 

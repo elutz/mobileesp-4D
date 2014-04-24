@@ -14,8 +14,8 @@
 C_BOOLEAN($0)
 
 $0:=detectBlackBerry \
- & ((Position(<>deviceBBStorm;userAgent)#-1) | \
-(Position(<>deviceBBTorch;userAgent)#-1) | \
-(Position(<>deviceBBBoldTouch;userAgent)#-1) | \
-(Position(<>deviceBBCurveTouch;userAgent)#-1))
+ & ((Position(<>deviceBBStorm;userAgent)#0) | \
+(Position(<>deviceBBTorch;userAgent)#0) | \
+(Position(<>deviceBBBoldTouch;userAgent)#0) | \
+(Position(<>deviceBBCurveTouch;userAgent)#0))
 

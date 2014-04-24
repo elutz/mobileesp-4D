@@ -10,7 +10,7 @@
 //*This method detects for the new generation of
 //*HTML 5 capable, larger screen tablets.
 //*Includes iPad, Android(e.g., Xoom), BB Playbook, WebOS, etc.
-//*@$0:= detection of any device in the Tablet Tier
+//*@return  detection of any device in the Tablet Tier
 // Parameters
 // ----------------------------------------------------
 

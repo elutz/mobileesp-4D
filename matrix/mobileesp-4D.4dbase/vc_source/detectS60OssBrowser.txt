@@ -13,5 +13,5 @@
 
 //First, test for WebKit, then make sure it's either Symbian or S60.
 $0:=detectWebkit \
- & ((Position(<>deviceSymbian;userAgent)#-1)\
- | (Position(<>deviceS60;userAgent)#-1))
+ & ((Position(<>deviceSymbian;userAgent)#0)\
+ | (Position(<>deviceS60;userAgent)#0))

@@ -7,7 +7,7 @@
 // Method: detectIphone
 // Description
 //  * Detects if the current device is an iPhone.
-// *@$0:= detection of an iPhone
+// *@return  detection of an iPhone
 //
 // Parameters
 // ----------------------------------------------------
@@ -18,7 +18,7 @@ If ((initCompleted=True) | (isIphone=True))
 $0:=isIphone
 Else 
 // The iPad and iPod touch say they're an iPhone! So let's disambiguate.
-If ((Position(<>deviceIphone;userAgent)#-1) & Not(detectIpad ) & Not(detectIpod ))
+If ((Position(<>deviceIphone;userAgent)#0) & Not(detectIpad ) & Not(detectIpod ))
 $0:=True
 Else 
 $0:=False

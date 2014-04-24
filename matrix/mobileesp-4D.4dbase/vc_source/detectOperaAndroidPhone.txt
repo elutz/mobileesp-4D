@@ -12,6 +12,6 @@
 // ----------------------------------------------------
 C_BOOLEAN($0)
 
-$0:=((Position(<>engineOpera;userAgent)#-1)\
- & (Position(<>deviceAndroid;userAgent)#-1)\
- & (Position(<>mobi;userAgent)#-1))
+$0:=((Position(<>engineOpera;userAgent)#0)\
+ & (Position(<>deviceAndroid;userAgent)#0)\
+ & (Position(<>mobi;userAgent)#0))

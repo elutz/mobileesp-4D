@@ -9,7 +9,7 @@
 //*Detects if the current browser is a Windows Mobile device.
 //*Excludes Windows Phone 7.x and 8 devices.
 //*Focuses on Windows Mobile 6.xx and earlier.
-//*@$0:= detection of Windows Mobile
+//*@return  detection of Windows Mobile
 // Parameters
 // ----------------------------------------------------
 C_BOOLEAN($0)
@@ -20,19 +20,15 @@ Else
 //Most devices use 'Windows CE', but some report 'iemobile'
 //  and some older ones report as 'PIE' for Pocket IE.
 //  We also look for instances of HTC and Windows for many of their WinMo devices.
-If ((Position(<>deviceWinMob;userAgent)#-1)\
- | (Position(<>deviceWinMob;userAgent)#-1)\
- | (Position(<>deviceIeMob;userAgent)#-1)\
- | (Position(<>enginePie;userAgent)#-1)\
- | ((Position(<>manuHtc;userAgent)#-1) & (Position(<>deviceWindows;userAgent)#-1)))
+If ((Position(<>deviceWinMob;userAgent)#0) | (Position(<>deviceWinMob;userAgent)#0) | (Position(<>deviceIeMob;userAgent)#0) | (Position(<>enginePie;userAgent)#0) | ((Position(<>manuHtc;userAgent)#0) & (Position(<>deviceWindows;userAgent)#0)))
 // TODO
-//| (detectWapWml() &   (position(<>deviceWindows)#-1))
+//| (detectWapWml() &   (position(<>deviceWindows)#0))
 $0:=True
 
 Else 
 
 //Test for Windows Mobile PPC but not old Macintosh PowerPC.
-$0:=(Position(<>devicePpc;userAgent)#-1) & Not(Position(<>deviceMacPpc;userAgent)#-1)
+$0:=(Position(<>devicePpc;userAgent)#0) & Not(Position(<>deviceMacPpc;userAgent)#0)
 
 End if 
 End if 

@@ -13,4 +13,4 @@
 // ----------------------------------------------------
 C_BOOLEAN($0)
 
-$0:=Position(<>deviceIpod;userAgent)#-1
+$0:=Position(<>deviceIpod;userAgent)#0

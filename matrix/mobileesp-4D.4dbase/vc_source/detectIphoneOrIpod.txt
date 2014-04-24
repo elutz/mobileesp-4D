@@ -13,8 +13,8 @@
 C_BOOLEAN($0)
 
 //We repeat the searches here because some iPods may report themselves as an iPhone, which would be okay.
-$0:=(Position(<>deviceIphone;userAgent)#-1)\
- | (Position(<>deviceIpod;userAgent)#-1)
+$0:=(Position(<>deviceIphone;userAgent)#0)\
+ | (Position(<>deviceIpod;userAgent)#0)
 
 
 

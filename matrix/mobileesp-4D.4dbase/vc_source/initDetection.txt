@@ -18,4 +18,5 @@ userAgent:=$1
 httpAccept:=$2
 
 //Intialize key stored values.
+Compiler_StaticVars 
 initDeviceScan 

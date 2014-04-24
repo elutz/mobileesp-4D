@@ -12,4 +12,4 @@
 // ----------------------------------------------------
 C_BOOLEAN($0)
 
-$0:=Position(<>deviceWinPhone7;userAgent)#-1
+$0:=Position(<>deviceWinPhone7;userAgent)#0

@@ -16,5 +16,5 @@ C_BOOLEAN($0)
 If ((initCompleted=True) | (isWebkit=True))
 $0:=isWebkit
 Else 
-$0:=Position(<>engineWebKit;userAgent)#-1
+$0:=Position(<>engineWebKit;userAgent)#0
 End if 

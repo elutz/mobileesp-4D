@@ -13,7 +13,7 @@
 // ----------------------------------------------------
 C_BOOLEAN($0)
 
-If ((Position(<>deviceBB;userAgent)#-1) | (Position(<>vndRIM;httpAccept)#-1))
+If ((Position(<>deviceBB;userAgent)#0) | (Position(<>vndRIM;httpAccept)#0))
 $0:=True
 Else 
 $0:=detectBlackBerry10Phone 

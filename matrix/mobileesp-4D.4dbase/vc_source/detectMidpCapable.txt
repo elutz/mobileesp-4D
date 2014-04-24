@@ -12,6 +12,6 @@
 // ----------------------------------------------------
 C_BOOLEAN($0)
 
-$0:=(Position(<>deviceMidp;userAgent)#-1)\
- | (Position(<>deviceMidp;httpAccept)#-1)
+$0:=(Position(<>deviceMidp;userAgent)#0)\
+ | (Position(<>deviceMidp;httpAccept)#0)
 

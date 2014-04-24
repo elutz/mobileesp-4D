@@ -1,0 +1,17 @@
+﻿//%attributes = {"lang":"en","invisible":true} comment added and reserved by 4D.
+C_TEXT($useragentDesktop;$useragentIphone;$useragentIPad;$useragentGalaxyTab;$accept)
+$useragentDesktop:=\
+"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.116 Safari/537.36"
+$useragentIphone:=\
+"Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5"
+$useragentIPad:=\
+"Mozilla/5.0 (iPad; CPU OS 7_0 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11A465 Safari/9537.53"
+$useragentGalaxyTab:=\
+"Mozilla/5.0 (Linux; U; Android 2.2; en-us; SCH-I800 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+$accept:=""
+
+initDetection ($useragentGalaxyTab;$accept)
+
+ALERT("mobile: isIphone "+String(getIsIPhone )+"\r"+\
+"mobile: isTierIphone "+String(getIsTierIphone )+"\r"+\
+"mobile: isTierTablet "+String(getIsTierTablet ))

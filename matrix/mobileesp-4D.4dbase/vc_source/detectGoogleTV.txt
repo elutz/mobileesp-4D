@@ -12,4 +12,4 @@
 // ----------------------------------------------------
 C_BOOLEAN($0)
 
-$0:=Position(<>deviceGoogleTV;userAgent)#-1
+$0:=Position(<>deviceGoogleTV;userAgent)#0

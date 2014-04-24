@@ -8,7 +8,7 @@
 // Description
 //*Detects*any*Android OS-based device: phone, tablet, and multi-media player.
 //*Also detects Google TV.
-//*@$0:=detection of an Android device
+//*@return detection of an Android device
 //
 // Parameters
 // ----------------------------------------------------
@@ -19,12 +19,12 @@ $0:=isAndroid
 
 Else 
 
-If ((Position(<>deviceAndroid;userAgent)#-1) | detectGoogleTV )
+If ((Position(<>deviceAndroid;userAgent)#0) | detectGoogleTV )
 $0:=True
 
 Else 
 //Special check for the HTC Flyer 7" tablet. It should report here.
-$0:=Position(<>deviceHtcFlyer;userAgent)#-1
+$0:=Position(<>deviceHtcFlyer;userAgent)#0
 
 End if 
 End if 

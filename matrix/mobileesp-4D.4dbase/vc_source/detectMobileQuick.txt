@@ -9,7 +9,7 @@
 //*Detects if the current device is a mobile device.
 //*This method catches most of the popular modern devices.
 //*Excludes Apple iPads and other modern tablets.
-//*@$0:=detection of any mobile device using the quicker method  
+//*@return detection of any mobile device using the quicker method  
 // Parameters
 // ----------------------------------------------------
 C_BOOLEAN($0)
@@ -37,10 +37,10 @@ $0:=True
 
 Else 
 
-If ((Position(<>engineObigo;userAgent)#-1)\
- | (Position(<>engineNetfront;userAgent)#-1)\
- | (Position(<>engineUpBrowser;userAgent)#-1)\
- | (Position(<>engineOpenWeb;userAgent)#-1))
+If ((Position(<>engineObigo;userAgent)#0)\
+ | (Position(<>engineNetfront;userAgent)#0)\
+ | (Position(<>engineUpBrowser;userAgent)#0)\
+ | (Position(<>engineOpenWeb;userAgent)#0))
 $0:=True
 
 Else 
@@ -55,17 +55,17 @@ $0:=True
 
 Else 
 
-If ((Position(<>devicePda;userAgent)#-1) & (Position(<>disUpdate;userAgent)<0))//no index found
+If ((Position(<>devicePda;userAgent)#0) & (Position(<>disUpdate;userAgent)=0))//no index found
 $0:=True
 
 Else 
-$0:=Position(<>mobile;userAgent)#-1
+$0:=Position(<>mobile;userAgent)#0
 
 // TODO Maybe later
-//$0:=True
+//return True
 //Else 
 //We also look for Kindle devices
-//$0:=detectKindle() | detectAmazonSilk()
+//return detectKindle() | detectAmazonSilk()
 //End if 
 
 End if 

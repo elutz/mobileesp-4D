@@ -14,8 +14,8 @@
 // ----------------------------------------------------
 C_BOOLEAN($0)
 
-$0:=(Position(<>deviceSymbian;userAgent)#-1)\
- | (Position(<>deviceS60;userAgent)#-1)\
- | (Position(<>deviceS70;userAgent)#-1)\
- | (Position(<>deviceS80;userAgent)#-1)\
- | (Position(<>deviceS90;userAgent)#-1)
+$0:=(Position(<>deviceSymbian;userAgent)#0)\
+ | (Position(<>deviceS60;userAgent)#0)\
+ | (Position(<>deviceS70;userAgent)#0)\
+ | (Position(<>deviceS80;userAgent)#0)\
+ | (Position(<>deviceS90;userAgent)#0)
